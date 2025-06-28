@@ -60,21 +60,36 @@
             int res = b * a;
                 --> this is type promotion, bytes are now converted into integers.
 */
+// public class basics{
+//     public static void main(String[] args) {
+//         // explicit conversion
+//         // byte b = 10;
+//         // int a = 19;
+//         // // b = a; // This would result in error even if the value of the integer a is in the range of byte b
+//         // b = (byte)a;
+//         // System.out.println(b);
+
+//         // implicit conversion
+//         // int a = 10;
+//         // byte b = 0;
+//         // a = b;
+//         // System.out.println(a); 
+//     }
+// }
+
+
+class Calculate{
+    public int add(int num1,int num2){
+        int result = num1 + num2;
+        return result;
+    }
+}
 public class basics{
     public static void main(String[] args) {
-        // explicit conversion
-        // byte b = 10;
-        // int a = 19;
-        // // b = a; // This would result in error even if the value of the integer a is in the range of byte b
-        // b = (byte)a;
-        // System.out.println(b);
-
-        // implicit conversion
-        // int a = 10;
-        // byte b = 0;
-        // a = b;
-        // System.out.println(a);
-
-         
+        Calculate calc = new Calculate();
+        int a = 4;
+        int b = 5;
+        int res = calc.add(a,b);
+        System.out.println(res);
     }
 }
