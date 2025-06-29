@@ -77,19 +77,31 @@
 //     }
 // }
 
+// A basic example of methods in java :
+// class Calculate{
+//     public int add(int num1,int num2, int num3){
+//         int result = num1 + num2 + num3;
+//         return result;
+//     }
+    
+//     // If we add another Method of the same name
+//     // which have different parameters or return type
+//     // it would be called method overloading.
+//     // and it can be done in java
+//     public int add(int n1,int n2){
+//         return n1 + n2;
+//     }
+// }
+// public class basics{
+//     public static void main(String[] args) {
+//         Calculate calc = new Calculate();
+//         int a = 4;
+//         int b = 5;
+//         // int res = calc.add(a,b);,
+//         int res = calc.add(a,b,10);
+//         System.out.println(res);
+//     }
+// }
 
-class Calculate{
-    public int add(int num1,int num2){
-        int result = num1 + num2;
-        return result;
-    }
-}
-public class basics{
-    public static void main(String[] args) {
-        Calculate calc = new Calculate();
-        int a = 4;
-        int b = 5;
-        int res = calc.add(a,b);
-        System.out.println(res);
-    }
-}
+
+
