@@ -105,3 +105,12 @@
 
 
 
+// In JVM every method has it's own stack memory.
+//      --> all the local variables are stored in this.
+
+// Objects in Java resides in the heap memory.
+//      --> which contains all the instance variable
+//          --> Let's say i created a variable named int num, the definition of it will be in the heap
+//              it occupies space in the stack memory
+
+
