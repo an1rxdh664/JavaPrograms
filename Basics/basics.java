@@ -114,17 +114,17 @@
 //              it occupies space in the stack memory
 
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 // Arrays :
 public class basics{
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        // Scanner scan = new Scanner(System.in);
         // to take inputs in java
         // System.out.print("Enter your name : ");
         // String name = scan.nextLine();
         // intialize a scanner which scans the input
-        System.out.print("Hello "+name+" !");
+        // System.out.print("Hello "+name+" !");
         // Declaration and printing an array
         // int arr[] = {1,2,3,4};
         // for(int i=0;i<4;i++) System.out.println(arr[i]);
