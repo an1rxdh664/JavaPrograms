@@ -114,3 +114,56 @@
 //              it occupies space in the stack memory
 
 
+import java.util.Scanner;
+
+// Arrays :
+public class basics{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        // to take inputs in java
+        // System.out.print("Enter your name : ");
+        // String name = scan.nextLine();
+        // intialize a scanner which scans the input
+        System.out.print("Hello "+name+" !");
+        // Declaration and printing an array
+        // int arr[] = {1,2,3,4};
+        // for(int i=0;i<4;i++) System.out.println(arr[i]);
+        
+        // int arr[] = new int[4];
+        // this creates an array of 4 elements each assigned 0 at the moment.
+        // for(int i=0;i<4;i++) System.out.println(arr[i]);
+
+        // Multi dimensional arrays 
+        // int arr[][] = new int[3][4];
+        // for(int i=0;i<3;i++){
+        //     for(int j=0;j<4;j++){
+        //         // This generates a random value and stores into the multidimensional array
+                
+        //         arr[i][j] = (int)(Math.random() * 100);
+        //             // Multiplying by 100 returns double dig val
+        //             // Multiplying by 10 returns single dig val
+
+        //         System.out.print(arr[i][j] + " ");
+        //     } System.out.println();
+        // }
+
+        // multidimensional jagged array
+        // int jagAr[][] = new int[3][];
+        // // in jagged array, we have defined amount of rows but not columns
+
+        // // declaring how many values will each row contain
+        // jagAr[0] = new int[4];
+        // jagAr[1] = new int[2];
+        // jagAr[2] = new int[3];
+
+        // for(int i=0;i<jagAr.length;i++){
+        //     for(int j=0;j<jagAr[i].length;j++){
+        //         jagAr[i][j] = (int)(Math.random() * 10);
+        //         System.out.print(jagAr[i][j] + " ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // Exception are the error which occur during the runtime, not the compilation
+    }
+}
