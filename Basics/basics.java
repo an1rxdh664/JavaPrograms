@@ -117,8 +117,8 @@
 // import java.util.Scanner;
 
 // Arrays :
-public class basics{
-    public static void main(String[] args) {
+// public class basics{
+//     public static void main(String[] args) {
         // Scanner scan = new Scanner(System.in);
         // to take inputs in java
         // System.out.print("Enter your name : ");
@@ -165,5 +165,65 @@ public class basics{
         // }
 
         // Exception are the error which occur during the runtime, not the compilation
+//     }
+// }
+
+
+// Strings
+
+// public class basics{
+//     public static void main(String[] args) {
+        // The ideal way to create a string in JAVA is like : 
+        // String name = "Anirudh";
+        // System.out.println(name);
+        // Strings can be MUTABLE and IMMUTABLE
+        /// What generally happens in JAVA is whenever the value of a string is updated
+        /// it's reference is updated not the original string
+        /// the original string is still in the heap memory of JVM, which will later be garbage collected 
+
+        // StringBuffer name = new StringBuffer("Anirudh");
+        // System.out.println(name.capacity());
+        // String buffer occupies an extra 16 space in buffer.
+        // System.out.println(name.length());
+        // Capacity and Length are different
+
+        // name.append(" Kushwah"); // This will add this string into my name string
+        // System.out.println(name);
+
+//     }
+// }
+
+class Mobile{
+    String brand;
+    int price;
+    // String type; // Initial
+    static String type; // Static type
+
+    public void show() {
+        System.out.println("Phone -> "+brand+" : "+price+" : "+ type);
+    }
+}
+public class basics{
+    public static void main(String[] args) {
+        Mobile Obj = new Mobile();
+        Obj.brand = "Xiaomi";
+        Obj.price = 11000;
+        // Obj.type = "Smart Phone"; // Normal
+        Mobile.type = "Smart Phone";
+        Mobile Obj2 = new Mobile();
+        Obj2.brand = "Apple";
+        Obj2.price = 125000;
+        // Obj2.type = "Smart Phone"; // Normal
+        Mobile.type = "Smart Phone";
+        // Static variables can be accessed directly with their class.
+
+        // Normal object creation
+
+        Obj.show();
+        Obj2.show();
+
+        // But if we create a static variable which is common for the objects, we have to use STATIC Keyword
+
+
     }
 }
