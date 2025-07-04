@@ -193,37 +193,37 @@
 //     }
 // }
 
-class Mobile{
-    String brand;
-    int price;
-    // String type; // Initial
-    static String type; // Static type
+// class Mobile{
+//     String brand;
+//     int price;
+//     // String type; // Initial
+//     static String type; // Static type
 
-    public void show() {
-        System.out.println("Phone -> "+brand+" : "+price+" : "+ type);
-    }
-}
-public class basics{
-    public static void main(String[] args) {
-        Mobile Obj = new Mobile();
-        Obj.brand = "Xiaomi";
-        Obj.price = 11000;
-        // Obj.type = "Smart Phone"; // Normal
-        Mobile.type = "Smart Phone";
-        Mobile Obj2 = new Mobile();
-        Obj2.brand = "Apple";
-        Obj2.price = 125000;
-        // Obj2.type = "Smart Phone"; // Normal
-        Mobile.type = "Smart Phone";
-        // Static variables can be accessed directly with their class.
+//     public void show() {
+//         System.out.println("Phone -> "+brand+" : "+price+" : "+ type);
+//     }
+// }
+// public class basics{
+//     public static void main(String[] args) {
+//         Mobile Obj = new Mobile();
+//         Obj.brand = "Xiaomi";
+//         Obj.price = 11000;
+//         // Obj.type = "Smart Phone"; // Normal
+//         Mobile.type = "Smart Phone";
+//         Mobile Obj2 = new Mobile();
+//         Obj2.brand = "Apple";
+//         Obj2.price = 125000;
+//         // Obj2.type = "Smart Phone"; // Normal
+//         Mobile.type = "Smart Phone";
+//         // Static variables can be accessed directly with their class.
 
-        // Normal object creation
+//         // Normal object creation
 
-        Obj.show();
-        Obj2.show();
+//         Obj.show();
+//         Obj2.show();
 
-        // But if we create a static variable which is common for the objects, we have to use STATIC Keyword
+//         // But if we create a static variable which is common for the objects, we have to use STATIC Keyword
 
 
-    }
-}
+//     }
+// }
