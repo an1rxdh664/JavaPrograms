@@ -1,1 +1,1 @@
-This is to contains all my Java Programs
+This repo will contain all my JAVA Programs
