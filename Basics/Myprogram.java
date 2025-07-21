@@ -1,17 +1,28 @@
-public class Myprogram{
-public static void main(String []arr){
+class Calc{
 
-int a=5;
-int b=10;
-int c=15;
+    int num = 5; // instance variable
+    int ret = 10;
 
-int num;
-
-num=a+b+c;
-System.out.println("The addition of numbers is :" +num);
-
-num= c-a;
-System.out.println("The subraction of number is:" +num);
+    public int add(int n1, int n2){
+        System.out.println(num);
+        return ret;
+    }
+    public int subtract(int n1, int n2){
+        System.out.println(ret);
+        return n1 - n2;
+    }
 }
+public class Myprogram{
+    public static void main(String[] args) {
+        Calc obj = new Calc();
+        
+        int sum = obj.add(1, 2);
+        
+        
+        int a = 5;
+
+
+        System.out.println(sum);
+    }
 
 }
