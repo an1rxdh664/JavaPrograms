@@ -7,3 +7,18 @@
 // JVM is part of JRE which provides libraries for the programmer or developer to use.
 
 // JAVA is WORA - Write once run anywhere
+
+
+// int a[] = {1,2,3,4};
+
+public class index{
+    public static void main(String[] args) {
+        int arr[] = {1,2,3,4};
+        for(int a=0;a<arr.length;a++){
+            System.out.println(arr[a]); 
+        }
+        for(int i in arr){
+            System.out.println(i);
+        }
+    }
+}
