@@ -118,43 +118,67 @@
 //     }
 // }
 
-class SmartPhone{
-    int price;
-    String name;
-    static String type;
+// class SmartPhone{
+//     int price;
+//     String name;
+//     static String type;
 
-    public void show(){
-        System.out.println(name + " : " + price + " : " + type);
+//     public void show(){
+//         System.out.println(name + " : " + price + " : " + type);
+//     }
+
+//     public static void show1(SmartPhone obj){
+//         // System.out.println(name + " : " + price + " : " + type);
+//         // we cannot use the non static variable in a static method
+//         // also one more thing whenever we have to use the static method, we can call it directly with the class
+//         // but that was not the case with the non static method
+
+//         // to get the non static values we can just pass the object into the static method and call the value by references
+//         System.out.println(obj.name + " : " + obj.price + " : " + type);
+//     }
+// }
+
+// public class main{
+//     public static void main(String[] args) {
+//         // Static keyword : static keyword is a variable which is shared by all the other objects
+//         SmartPhone.type = "Smart Phone";
+//         // the static variable can be accessed directly with the class name
+
+//         SmartPhone s1 = new SmartPhone();
+//         s1.price = 20000;
+//         s1.name = "Poco M6 5G";
+
+//         SmartPhone s2 = new SmartPhone();
+//         s2.price = 11000;
+//         s2.name = "Oppo f11";
+
+//         // s1.show();
+//         // s2.show();
+//         // as we can see that the 'type' of each of the smartphone object is same 'Smart Phone' which is because we declared the type as a static variable so it is shared with all the objects we create
+//         // SmartPhone.show1(s1);
+//     }
+// }
+
+
+class Human{
+    private int age;
+    private String name;
+    
+    // this method is to set the value for the name and age variable
+    public void setDetails(int getAge, String getName){
+        age = getAge;
+        name = getName;
+    }
+    public String getDetails(){
+        return (name + " : " + age);
     }
 
-    public static void show1(SmartPhone obj){
-        // System.out.println(name + " : " + price + " : " + type);
-        // we cannot use the non static variable in a static method
-        // also one more thing whenever we have to use the static method, we can call it directly with the class
-        // but that was not the case with the non static method
-
-        // to get the non static values we can just pass the object into the static method and call the value by references
-        System.out.println(obj.name + " : " + obj.price + " : " + type);
-    }
 }
-
 public class main{
     public static void main(String[] args) {
-        // Static keyword : static keyword is a variable which is shared by all the other objects
-        SmartPhone.type = "Smart Phone";
-        // the static variable can be accessed directly with the class name
-
-        SmartPhone s1 = new SmartPhone();
-        s1.price = 20000;
-        s1.name = "Poco M6 5G";
-
-        SmartPhone s2 = new SmartPhone();
-        s2.price = 11000;
-        s2.name = "Oppo f11";
-
-        // s1.show();
-        // s2.show();
-        // as we can see that the 'type' of each of the smartphone object is same 'Smart Phone' which is because we declared the type as a static variable so it is shared with all the objects we create
-        // SmartPhone.show1(s1);
+        // Encapsulation means that the variable should not be accessible to each and everyone, and to access or modify those variables we should have separate methods
+        Human person = new Human();
+        // person.setDetails(20, "Anirudh");
+        // System.out.println(person.getDetails());
     }
 }
