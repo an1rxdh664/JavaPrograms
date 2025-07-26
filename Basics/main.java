@@ -65,43 +65,55 @@
 // }
 
 
-class Student{
-    int age;
-    String name;
-    double gpa;
-}
+// class Student{
+//     int age;
+//     String name;
+//     double gpa;
+// }
 
 public class main{
     public static void main(String[] args) {
         // array like objects
-        Student s1 = new Student();
-        s1.age = 20;
-        s1.name = "Anirudh";
-        s1.gpa = 8.0;
+        // Student s1 = new Student();
+        // s1.age = 20;
+        // s1.name = "Anirudh";
+        // s1.gpa = 8.0;
 
-        Student s2 = new Student();
-        s2.age = 20;
-        s2.name = "Bob";
-        s2.gpa = 7.3;
+        // Student s2 = new Student();
+        // s2.age = 20;
+        // s2.name = "Bob";
+        // s2.gpa = 7.3;
         
-        Student s3 = new Student();
-        s3.age = 20;
-        s3.name = "Helen";
-        s3.gpa = 5.6;
+        // Student s3 = new Student();
+        // s3.age = 20;
+        // s3.name = "Helen";
+        // s3.gpa = 5.6;
         
-        Student s4 = new Student();
-        s4.age = 20;
-        s4.name = "Keller";
-        s4.gpa = 9.2;
+        // Student s4 = new Student();
+        // s4.age = 20;
+        // s4.name = "Keller";
+        // s4.gpa = 9.2;
 
-        Student students[] = new Student[4]; // this now created an array of students
-        students[0] = s1;
-        students[1] = s2;
-        students[2] = s3;
-        students[3] = s4;
+        // Student students[] = new Student[4]; // this now created an array of students
+        // students[0] = s1;
+        // students[1] = s2;
+        // students[2] = s3;
+        // students[3] = s4;
 
-        for(int i=0;i<students.length;i++){
-            System.out.println("Name : " + students[i].name + " " + "GPA : " + students[i].gpa);
-        }
+        // for(int i=0;i<students.length;i++){
+        //     System.out.println("Name : " + students[i].name + " " + "GPA : " + students[i].gpa);
+        // }
+
+        // StringBuffer
+        StringBuffer str = new StringBuffer("Anirudh");
+        // this creates a string buffer of capacity 16
+        // System.out.println(str.capacity()); // 16
+        // System.out.println(str); // "Anirudh"
+        // System.out.println(str.capacity()); // 23 (16 + 7)
+        // System.out.println(str.length()); // 7
+        
+        // to append data into the string
+        str.append(" Kushwah");
+        // System.out.println(str); // "Anirudh Kushwah"
     }
 }
