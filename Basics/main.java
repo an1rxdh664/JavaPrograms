@@ -71,49 +71,90 @@
 //     double gpa;
 // }
 
+// public class main{
+//     public static void main(String[] args) {
+//         // array like objects
+//         // Student s1 = new Student();
+//         // s1.age = 20;
+//         // s1.name = "Anirudh";
+//         // s1.gpa = 8.0;
+
+//         // Student s2 = new Student();
+//         // s2.age = 20;
+//         // s2.name = "Bob";
+//         // s2.gpa = 7.3;
+        
+//         // Student s3 = new Student();
+//         // s3.age = 20;
+//         // s3.name = "Helen";
+//         // s3.gpa = 5.6;
+        
+//         // Student s4 = new Student();
+//         // s4.age = 20;
+//         // s4.name = "Keller";
+//         // s4.gpa = 9.2;
+
+//         // Student students[] = new Student[4]; // this now created an array of students
+//         // students[0] = s1;
+//         // students[1] = s2;
+//         // students[2] = s3;
+//         // students[3] = s4;
+
+//         // for(int i=0;i<students.length;i++){
+//         //     System.out.println("Name : " + students[i].name + " " + "GPA : " + students[i].gpa);
+//         // }
+
+//         // StringBuffer
+//         StringBuffer str = new StringBuffer("Anirudh");
+//         // this creates a string buffer of capacity 16
+//         // System.out.println(str.capacity()); // 16
+//         // System.out.println(str); // "Anirudh"
+//         // System.out.println(str.capacity()); // 23 (16 + 7)
+//         // System.out.println(str.length()); // 7
+        
+//         // to append data into the string
+//         str.append(" Kushwah");
+//         // System.out.println(str); // "Anirudh Kushwah"
+//     }
+// }
+
+class SmartPhone{
+    int price;
+    String name;
+    static String type;
+
+    public void show(){
+        System.out.println(name + " : " + price + " : " + type);
+    }
+
+    public static void show1(SmartPhone obj){
+        // System.out.println(name + " : " + price + " : " + type);
+        // we cannot use the non static variable in a static method
+        // also one more thing whenever we have to use the static method, we can call it directly with the class
+        // but that was not the case with the non static method
+
+        // to get the non static values we can just pass the object into the static method and call the value by references
+        System.out.println(obj.name + " : " + obj.price + " : " + type);
+    }
+}
+
 public class main{
     public static void main(String[] args) {
-        // array like objects
-        // Student s1 = new Student();
-        // s1.age = 20;
-        // s1.name = "Anirudh";
-        // s1.gpa = 8.0;
+        // Static keyword : static keyword is a variable which is shared by all the other objects
+        SmartPhone.type = "Smart Phone";
+        // the static variable can be accessed directly with the class name
 
-        // Student s2 = new Student();
-        // s2.age = 20;
-        // s2.name = "Bob";
-        // s2.gpa = 7.3;
-        
-        // Student s3 = new Student();
-        // s3.age = 20;
-        // s3.name = "Helen";
-        // s3.gpa = 5.6;
-        
-        // Student s4 = new Student();
-        // s4.age = 20;
-        // s4.name = "Keller";
-        // s4.gpa = 9.2;
+        SmartPhone s1 = new SmartPhone();
+        s1.price = 20000;
+        s1.name = "Poco M6 5G";
 
-        // Student students[] = new Student[4]; // this now created an array of students
-        // students[0] = s1;
-        // students[1] = s2;
-        // students[2] = s3;
-        // students[3] = s4;
+        SmartPhone s2 = new SmartPhone();
+        s2.price = 11000;
+        s2.name = "Oppo f11";
 
-        // for(int i=0;i<students.length;i++){
-        //     System.out.println("Name : " + students[i].name + " " + "GPA : " + students[i].gpa);
-        // }
-
-        // StringBuffer
-        StringBuffer str = new StringBuffer("Anirudh");
-        // this creates a string buffer of capacity 16
-        // System.out.println(str.capacity()); // 16
-        // System.out.println(str); // "Anirudh"
-        // System.out.println(str.capacity()); // 23 (16 + 7)
-        // System.out.println(str.length()); // 7
-        
-        // to append data into the string
-        str.append(" Kushwah");
-        // System.out.println(str); // "Anirudh Kushwah"
+        // s1.show();
+        // s2.show();
+        // as we can see that the 'type' of each of the smartphone object is same 'Smart Phone' which is because we declared the type as a static variable so it is shared with all the objects we create
+        // SmartPhone.show1(s1);
     }
 }
