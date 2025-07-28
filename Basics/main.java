@@ -166,8 +166,8 @@ class Human{
     
     // this method is to set the value for the name and age variable
     public void setDetails(int getAge, String getName){ // setter
-        age = getAge;
-        name = getName;
+        this.age = getAge;
+        this.name = getName;
     }
     public String getDetails(){ // getter
         return (name + " : " + age);
@@ -178,10 +178,13 @@ public class main{
     public static void main(String[] args) {
         // Encapsulation means that the variable should not be accessible to each and everyone, and to access or modify those variables we should have separate methods
         Human person = new Human();
-        // person.setDetails(20, "Anirudh");
-        // System.out.println(person.getDetails());
+        person.setDetails(20, "Anirudh");
+        System.out.println(person.getDetails());
 
 
         // getters and setters are just methods name which are set to be used by different users to increase readability.
+    
+        // This keyword
+
     }
 }
