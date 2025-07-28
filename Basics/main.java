@@ -165,14 +165,14 @@ class Human{
     private String name;
     
     // this method is to set the value for the name and age variable
-    public void setDetails(int getAge, String getName){
+    public void setDetails(int getAge, String getName){ // setter
         age = getAge;
         name = getName;
     }
-    public String getDetails(){
+    public String getDetails(){ // getter
         return (name + " : " + age);
     }
-
+    
 }
 public class main{
     public static void main(String[] args) {
@@ -180,5 +180,8 @@ public class main{
         Human person = new Human();
         // person.setDetails(20, "Anirudh");
         // System.out.println(person.getDetails());
+
+
+        // getters and setters are just methods name which are set to be used by different users to increase readability.
     }
 }
