@@ -163,7 +163,25 @@
 class Human{
     private int age;
     private String name;
-    
+    // constructor --> it looks like a method also it does not return any value
+        // the name should be same as your class name
+
+    // public Human(){
+    //     System.out.println("in constructor");
+    // }
+    // the constructor is called without having to explicitly called, so everytime we create a new object a constructor is invoked or created. so we can use it to give default values like :
+
+    public Human(){
+        age = 12;
+        name = "Alex"; 
+    }
+
+    // custom instruction parameter --> this is called parameterized constructor
+    public Human(int a, String n){
+        age = a;
+        name = n;
+    }
+
     // this method is to set the value for the name and age variable
     public void setDetails(int getAge, String getName){ // setter
         this.age = getAge;
@@ -178,13 +196,23 @@ public class main{
     public static void main(String[] args) {
         // Encapsulation means that the variable should not be accessible to each and everyone, and to access or modify those variables we should have separate methods
         Human person = new Human();
+        Human person1 = new Human();
         person.setDetails(20, "Anirudh");
         System.out.println(person.getDetails());
-
-
+        System.out.println(person1.getDetails());
+        
+        
         // getters and setters are just methods name which are set to be used by different users to increase readability.
-    
+        
         // This keyword
+        // if we used this keyword, that keyword will be pointing toward the object with which the method is called upon
+        
+        // if we were to give custom default values to a constructor we can just pass them as arguments
+        Human person3 = new Human(18, "Anirudh");
+        System.out.println(person3.getDetails());
+
+        // Sometimes we don't even need to write up the constructor until unless we want to do something custom
+        // because JVM will do that job for us
 
     }
 }
