@@ -192,6 +192,44 @@ class Human{
     }
     
 }
+
+
+class Calc{
+    public int add(int n1, int n2){
+        return n1 + n2;
+    }
+    public int sub(int n1, int n2){
+        return n1 - n2;
+    }
+} // that's a normal calculator class, but if we were to create a new class and use this class's function, instead of writing each method again, we can use inheritence
+// that was a example of single level inheritence
+
+
+class AdvCalc extends Calc{ // this 'extendes calc' is that we are inheriting the methods of Calc inside the AdvCalc class
+
+    // right now the Calc class is a SUPER CLASS and the AdvCalc is a SUB CLASS
+    public int multi(int n1, int n2){
+        return n1 * n2;
+    }
+    public int div(int n1, int n2){
+        return n1 / n2;
+    }
+}
+
+// lets say we have this class which now can access all the methods of AdvCalc and Calc
+// to develop this we have to create a chain of heirarchy
+// if we extend VeryAdvCalc with AdvCalc thi
+class VeryAdvCalc extends AdvCalc{
+    public double power(int n1, int n2){
+        return Math.pow(n1, n2);
+    }
+    public double sqrRoot(int n){
+        return Math.sqrt(n);
+    }
+}
+// now VeryAdvCalc -> AdvCalc -> Calc
+// so we can now use the methods inside the Calc, now in VeryAdvCalc
+
 public class main{
     public static void main(String[] args) {
         // Encapsulation means that the variable should not be accessible to each and everyone, and to access or modify those variables we should have separate methods
@@ -214,5 +252,16 @@ public class main{
         // Sometimes we don't even need to write up the constructor until unless we want to do something custom
         // because JVM will do that job for us
 
+
+        // Inheritence - is has
+
+        // we created two calculator classes - Calc and AdvCalc, both of these classes have separate methods in them
+        //but if we cannot use the methods of both the classes at the same time, to do that we have inheritence :
+        
+        // Calc obj = new Calc();
+        // int sum = obj.add(3, 4);
+
+        AdvCalc obj = new AdvCalc();
+        int sum = obj.add(3, 4); // we can see that we cannot use the add method now that we changes the class name
     }
 }
