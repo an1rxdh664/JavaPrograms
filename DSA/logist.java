@@ -57,5 +57,17 @@ public class logist{
         //     temp /= 10;
         // }
         // System.out.println("Reversed Num : " + rev + " Original num : " + num);
+
+        // System.out.print("Enter the week day : ");
+        // int choice = in.nextInt();
+        // switch(choice){
+        //     case 1 -> System.out.println("Mon");
+        //     case 2 -> System.out.println("Tue");
+        //     case 3 -> System.out.println("Wed");
+        //     case 4 -> System.out.println("Thu");
+        //     case 5 -> System.out.println("Sat");
+        //     case 6 -> System.out.println("Sun");
+        //     default -> System.out.println("Enter a valid value");
+        // }
     }
 }
