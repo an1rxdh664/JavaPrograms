@@ -35,6 +35,18 @@ public class array {
         // System.out.println(Arrays.toString(nums));
         change(nums);
         // System.out.println(Arrays.toString(nums)); // we see that the value is now changed to the value we set in the function.
+
+        // Dynamic arrays :
+        int [][] mulArr = {
+            {1,2,3,4},
+            {3,4},
+            {5,6,7,8,9}
+        };
+        for (int row = 0; row < mulArr.length; row++) {
+            for(int col = 0; col < mulArr[row].length; col++) {
+                System.out.print(mulArr[row][col] + " ");
+            } System.out.println();
+        };
     }
     static void change(int[] arr){
         arr[0] = 45;
