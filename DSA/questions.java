@@ -3,8 +3,7 @@ public class questions{
 
 
     // leetcode 198
-    public static int houseRobber(){
-        int[] nums = {1,2,3,1};
+    public int houseRobber(int[] nums){
         int prev1 = 0;
         int prev2 = 0;
         int current = 0;
@@ -16,8 +15,27 @@ public class questions{
         return prev1;
     }
 
-
-    public static void main(String[] args) {
+    public static int sumOfDigits(int number){
+        int n = number;
+        int sum = 0;
+        while(n!=0){
+            sum += n%10;
+            n /= 10;
+        }
+        return sum;
+    }
+    public static int addDigits(int num){
+        if(num < 10 && num>=0){
+            return num;
+        }
+        int sum = sumOfDigits(num);
         
+        while(sum>=10) sum = sumOfDigits(sum);
+
+        return sum;
+    }
+    public static void main(String[] args) {
+        int res = addDigits(39);
+        System.out.println(res);
     }
 }
