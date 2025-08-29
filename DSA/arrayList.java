@@ -28,19 +28,58 @@ public class arrayList {
         // array list of array lists
 
         // initialisation for each element of the current array list
-        for (int i = 0; i < 3; i++) {
-            exList.add(new ArrayList<>());
-        }
+        // for (int i = 0; i < 3; i++) {
+        //     exList.add(new ArrayList<>());
+        // }
 
 
         // storing values --
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                exList.get(i).add(in.nextInt());
-            }
+        // for (int i = 0; i < 3; i++) {
+        //     for (int j = 0; j < 3; j++) {
+        //         exList.get(i).add(in.nextInt());
+        //     }
+        // }
+
+        // System.out.println(exList); // [[1, 2, 3], [5, 4, 9], [7, 8, 5]]
+
+
+        // Max value
+        int[] nums = {1,45,123,11,34,24,5};
+        System.out.println(getMax(nums));
+        System.out.println(getMaxInRange(nums, 3, 6));
+        
+        
+        for(int n: nums) System.out.print(n + " ");
+        System.out.println();
+        reverseArr(nums);
+        for(int n: nums) System.out.print(n + " ");
+    }
+    static int getMax(int[] arr){
+        int max = arr[0];
+        for(int i=0;i<arr.length;i++){
+            if(arr[i] > max) max = arr[i];
         }
+        return max;
+    }
+    static int getMaxInRange(int[] arr, int startIndex, int stopIndex){
+        int max = arr[startIndex];
+        if(stopIndex > arr.length || startIndex < 0) System.out.println("Enter a valid index");;
+        for(int i=startIndex;i<stopIndex;i++){
+            if(arr[i] > max) max = arr[i];
+        }
+        return max;
+    }
 
-        System.out.println(exList); // [[1, 2, 3], [5, 4, 9], [7, 8, 5]]
-
+    // reverse array
+    static void reverseArr(int[] arr){
+        int start = 0;
+        int end = arr.length - 1;
+        while(start<end){
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        }
     }
 }
