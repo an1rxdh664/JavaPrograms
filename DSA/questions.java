@@ -44,6 +44,17 @@ public class questions{
         return (area1 + area2) - overlap;
     }
 
+    // Count primes - leetcode 204
+    public int countPrimes(int n){
+        
+        return 0;
+    }
+
+    // First and last position of element in sorted array;
+    public int[] searchRange(int[] nums, int target){
+        
+    }
+
     public static void main(String[] args) {
         int res = addDigits(39);
         System.out.println(res);
