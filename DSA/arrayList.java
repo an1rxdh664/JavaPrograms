@@ -49,10 +49,15 @@ public class arrayList {
         System.out.println(getMaxInRange(nums, 3, 6));
         
         
-        for(int n: nums) System.out.print(n + " ");
-        System.out.println();
-        reverseArr(nums);
-        for(int n: nums) System.out.print(n + " ");
+        // Reverse array
+        // for(int n: nums) System.out.print(n + " ");
+        // System.out.println();
+        // reverseArr(nums);
+        // for(int n: nums) System.out.print(n + " ");
+
+        // Linear search
+        System.out.println("Value found at index : " + linearSearch(nums, 11));
+
     }
     static int getMax(int[] arr){
         int max = arr[0];
@@ -81,5 +86,12 @@ public class arrayList {
             start++;
             end--;
         }
+    }
+
+    static int linearSearch(int[] arr, int target){
+        int index = 0;
+        if(arr.length<0) return -1;
+        for(int i=0;i<arr.length;i++) if(arr[i]==target) return i;
+        return 0;
     }
 }
