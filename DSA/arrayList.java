@@ -58,6 +58,17 @@ public class arrayList {
         // Linear search
         System.out.println("Value found at index : " + linearSearch(nums, 11));
 
+        // fibionacci
+        int n = 5;
+        int first = 1;
+        int second = 1;
+        System.out.print(first + " " + second + " ");
+        for(int i=3;i<=n;i++){
+            int next = first + second;
+            first = second;
+            second = next;
+            System.out.print(next + " ");
+        }
     }
     static int getMax(int[] arr){
         int max = arr[0];
