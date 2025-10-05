@@ -236,8 +236,8 @@ public class main{
         Human person = new Human();
         Human person1 = new Human();
         person.setDetails(20, "Anirudh");
-        System.out.println(person.getDetails());
-        System.out.println(person1.getDetails());
+        // System.out.println(person.getDetails());
+        // System.out.println(person1.getDetails());
         
         
         // getters and setters are just methods name which are set to be used by different users to increase readability.
@@ -247,7 +247,7 @@ public class main{
         
         // if we were to give custom default values to a constructor we can just pass them as arguments
         Human person3 = new Human(18, "Anirudh");
-        System.out.println(person3.getDetails());
+        // System.out.println(person3.getDetails());
 
         // Sometimes we don't even need to write up the constructor until unless we want to do something custom
         // because JVM will do that job for us
@@ -263,5 +263,15 @@ public class main{
 
         AdvCalc obj = new AdvCalc();
         int sum = obj.add(3, 4); // we can see that we cannot use the add method now that we changes the class name
+
+        int result = 50;
+        if(result >= 90) System.out.println("A+");
+        else if(result >= 80 && result < 90) System.out.println("A");
+        else if(result >= 70 && result < 80) System.out.println("B+");
+        else if(result >= 60 && result < 70) System.out.println("B");
+        else if(result >= 50 && result < 60) System.out.println("C");
+        else if(result >= 40 && result < 50) System.out.println("D");
+        else if(result < 40) System.out.println("Fail");
+        
     }
 }

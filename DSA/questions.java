@@ -51,12 +51,21 @@ public class questions{
     }
 
     // First and last position of element in sorted array;
-    public int[] searchRange(int[] nums, int target){
-        
+    public int findNumbers(int[] nums){
+        int count = 0;
+        for(int i=0;i<nums.length;i++){
+            int n = nums[i];
+            while(n>0){
+                count++;
+                n /= 10;
+            }
+        }
+        return count;
     }
 
     public static void main(String[] args) {
-        int res = addDigits(39);
-        System.out.println(res);
+        // int res = addDigits(39);
+        // System.out.println(res);
+        System.out.println(findNumbers({12,345,2,6,7896}));
     }
 }
