@@ -225,3 +225,46 @@
 
 //     }
 // }
+
+
+
+// Exception
+import java.util.Scanner;
+
+public class basics{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+            // Our throw, Default Catch :
+
+            // int avail_balance = 5000;
+    
+            // System.out.print("Enter the amount to be withdrawn : ");
+            // int withdraw_amount = input.nextInt();
+
+            // if(withdraw_amount > avail_balance){
+            //     throw new ArithmeticException("Insufficient Balance : Cannot withdraw more than the available balance. Try again.");
+            // }
+
+            // avail_balance -= withdraw_amount;
+
+            // System.out.println("Withdrawn Balance : " + withdraw_amount);
+            // System.out.println("Available Balance : " + avail_balance);
+    
+
+
+            
+            // Default throw, Our catch
+            System.out.print("Number 1 : ");
+            int num1 = input.nextInt();
+            System.out.print("Number 2 : ");
+            int num2 = input. nextInt();
+            try {
+                int result = num1 / num2;
+                System.out.println("Result : " + result);
+            } catch (ArithmeticException error) {
+                System.out.println(" Cannot divide the number by 0.");
+            }
+
+    }
+}
