@@ -229,6 +229,7 @@
 
 
 // Exception
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class basics{
@@ -255,16 +256,20 @@ public class basics{
 
             
             // Default throw, Our catch
-            System.out.print("Number 1 : ");
-            int num1 = input.nextInt();
-            System.out.print("Number 2 : ");
-            int num2 = input. nextInt();
-            try {
-                int result = num1 / num2;
-                System.out.println("Result : " + result);
-            } catch (ArithmeticException error) {
-                System.out.println(" Cannot divide the number by 0.");
-            }
+            // System.out.print("Number 1 : ");
+            // int num1 = input.nextInt();
+            // System.out.print("Number 2 : ");
+            // int num2 = input. nextInt();
+            // try {
+            //     int result = num1 / num2;
+            //     System.out.println("Result : " + result);
+            // } catch (ArithmeticException error) {
+            //     System.out.println(" Cannot divide the number by 0.");
+            // }
+
+            ArrayList<Integer> list = new ArrayList<Integer>(5);
+            
+            // list.add()
 
     }
 }
